@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+nav{
+    width: 98vw;
+    padding-left: 30px;
+    height: 40px;
+}
+
+img{
+    width: 300px;
+}
+
+.hero{
+    margin-top: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+}
+

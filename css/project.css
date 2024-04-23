@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+nav{
+    width: 98vw;
+    padding-left: 30px;
+    height: 40px;
+}
+
+/* button{
+    width: 45vw;
+    height: 22vh;
+} */
+
+#one{
+    border-color: red;
+}
+#one:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+#two{
+    border-color: green;
+}
+#two:hover{
+    background-color: green;
+    color: white;
+}
+#three{
+    border-color: yellow;
+}
+#three:hover{
+    background-color: yellow;
+    color: black;
+}
+#four{
+    border-color: white;
+}
+#four:hover{
+    background-color: white;
+    color: black;
+}
+#five{
+    border-color: cyan;
+}
+/* #five:hover{
+    background-color: cyan;
+    color: black;
+} */
+.flexbox{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.image{
+  width: 300px;
+}
+
+.hover-1 {
+    background: linear-gradient(#1095c1 0 0) var(--p,0)/var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+  }
+  .hover-1:hover {
+    --p: 100%;
+    color: #fff;
+  }
+  
+  .hover-2 {
+    background: 
+      linear-gradient(#1095c1 0 0) no-repeat
+       calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+    transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  }
+  .hover-2:hover {
+    --p: 100%;
+    --t: .3s;
+    color: #fff;
+  }
+  
+  .hover-3 {
+    --c: no-repeat linear-gradient(#1095c1 0 0);
+    background: 
+      var(--c)  calc(-101% + var(--p,0%)) 100%,
+      var(--c)  calc( 201% - var(--p,0%)) 0;
+    background-size: 50.1% var(--p,.08em);
+    transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  }
+  .hover-3:hover {
+    --p: 101%;
+    --t: 0.3s;
+    color: #fff;
+  }
+  .hover-4 {
+    --c: #1095c1;
+    line-height: 1.2em;
+    background:
+      conic-gradient(from -135deg at 100%  50%,var(--c) 90deg,#0000 0) 0    var(--p,0%),
+      conic-gradient(from -135deg at 1.2em 50%,#0000 90deg,var(--c) 0) 100% var(--p,0%);
+    background-size: var(--s,0%) 200%;
+    background-repeat: no-repeat;
+    transition: .4s ease-in, background-position 0s;
+  }
+  .hover-4:hover {
+    --p: 100%;
+    --s: calc(50% + .61em); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+    color: #fff;
+  }
+
+article{
+  width: 327px;
+}
+
+.Mycard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #212121;
+  border: 2px solid #313131;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: #0974f1;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Mycard:hover {
+  box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+  border-color: #0974f1;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
+.Mycontainer {
+  width: 50%;
+  height: 50%;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+  
